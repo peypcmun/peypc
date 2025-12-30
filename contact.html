@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,122 +6,111 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-   body {
-  margin: 0;
-  font-family: 'Inter', 'Segoe UI', sans-serif;
-  background-color: #F7F9FC;
-  color: #1A1A1A;
-  padding: 0;
-}
+      margin: 0;
+      font-family: 'Inter', 'Segoe UI', sans-serif;
+      background-color: #F7F9FC;
+      color: #1A1A1A;
+      padding: 0;
+    }
 
-/* Navigation */
-nav {
-  background-color: #0A1A2F;
-  padding: 12px 0;
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-}
+    /* Navigation with logo */
+    nav {
+      background-color: #0A1A2F;
+      padding: 10px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-nav a {
-  color: #FFFFFF;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1rem;
-  transition: 0.2s;
-}
+    .nav-left img {
+      height: 40px;
+      width: auto;
+      border-radius: 6px;
+    }
 
-nav a:hover {
-  color: #C9A227;
-}
+    .nav-right {
+      display: flex;
+      gap: 25px;
+    }
 
-/* Page Title */
-h1 {
-  text-align: center;
-  font-size: 2rem;
-  margin-top: 40px;
-  margin-bottom: 25px;
-  color: #0A1A2F;
-}
+    .nav-right a {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: 0.2s;
+    }
 
-/* Content Boxes */
-.content-box, .contact-box, ul li, table {
-  background-color: #FFFFFF;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 900px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
+    .nav-right a:hover {
+      color: #C9A227;
+    }
 
-/* Lists */
-ul {
-  list-style: none;
-  padding: 0;
-}
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 40px;
+      margin-bottom: 25px;
+      color: #0A1A2F;
+    }
 
-ul li {
-  margin-bottom: 15px;
-  font-size: 1.05rem;
-  line-height: 1.6;
-}
+    .content-box {
+      background-color: #FFFFFF;
+      border-radius: 12px;
+      padding: 30px;
+      margin: 20px auto;
+      max-width: 900px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
 
-/* Tables */
-table {
-  width: 90%;
-  border-collapse: collapse;
-}
+    .contact-item {
+      margin-bottom: 15px;
+    }
 
-th, td {
-  padding: 15px;
-  border-bottom: 1px solid #E0E0E0;
-}
-
-th {
-  background-color: #F0F3F7;
-  font-weight: 600;
-}
-
-/* Form iframe */
-iframe {
-  width: 100%;
-  border: none;
-  border-radius: 10px;
-  height: 1200px;
-}
+    .contact-label {
+      font-weight: 600;
+      color: #0A1A2F;
+    }
   </style>
 </head>
 <body>
 
+  <!-- NAVIGATION WITH LOGO -->
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="parties.html">Parties</a>
-    <a href="schedule.html">Schedule</a>
-    <a href="rules.html">Rules</a>
-    <a href="registration.html">Registration</a>
-    <a href="contact.html">Contact</a>
+    <div class="nav-left">
+      <img src="eyp.2.jpeg" alt="PEYPC Logo">
+    </div>
+
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="parties.html">Parties</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="rules.html">Rules</a>
+      <a href="registration.html">Registration</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </nav>
 
   <h1>Contact Us</h1>
 
-  <div class="contact-box">
-    <p><span class="label">Email:</span><br>
-    peypcmun@gmail.com</p>
+  <div class="content-box">
+    <div class="contact-item">
+      <span class="contact-label">Email:</span> peypc.info@gmail.com
+    </div>
 
-    <p><span class="label">Phone Numbers:</span><br>
-    6982805007<br>
-    6981073735<br>
-    6981073959</p>
+    <div class="contact-item">
+      <span class="contact-label">School:</span> 1st General Lyceum of Pefki
+    </div>
 
-    <p><span class="label">Organizing Team:</span><br>
-    For administrative questions, logistics, and participation details.</p>
+    <div class="contact-item">
+      <span class="contact-label">Address:</span> Pefki, Attica, Greece
+    </div>
 
-    <p><span class="label">Academic Team:</span><br>
-    For committee topics, debate rules, and academic guidance.</p>
-
-    <p><span class="label">Location:</span><br>
-    1st General Lyceum of Pefki, Greece</p>
+    <div class="contact-item">
+      <span class="contact-label">Organizing Team:</span> PEYPC Student Committee
+    </div>
   </div>
 
 </body>
