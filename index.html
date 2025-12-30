@@ -2,99 +2,84 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>PEYPC – Pefki European Youth Parliament Conference</title>
+  <title>PEYPC – Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-  body {
-  margin: 0;
-  font-family: 'Inter', 'Segoe UI', sans-serif;
-  background-color: #F7F9FC;
-  color: #1A1A1A;
-  padding: 0;
-}
+      margin: 0;
+      font-family: 'Inter', 'Segoe UI', sans-serif;
+      background-color: #F7F9FC;
+      color: #1A1A1A;
+      padding: 0;
+    }
 
-/* Navigation */
-nav {
-  background-color: #0A1A2F;
-  padding: 12px 0;
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-}
+    /* Logo container */
+    .logo-box {
+      text-align: center;
+      padding: 25px 0 10px 0;
+    }
 
-nav a {
-  color: #FFFFFF;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1rem;
-  transition: 0.2s;
-}
+    .logo-box img {
+      width: 160px;
+      height: auto;
+    }
 
-nav a:hover {
-  color: #C9A227;
-}
+    nav {
+      background-color: #0A1A2F;
+      padding: 12px 0;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
 
-/* Page Title */
-h1 {
-  text-align: center;
-  font-size: 2rem;
-  margin-top: 40px;
-  margin-bottom: 25px;
-  color: #0A1A2F;
-}
+    nav a {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: 0.2s;
+    }
 
-/* Content Boxes */
-.content-box, .contact-box, ul li, table {
-  background-color: #FFFFFF;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 900px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
+    nav a:hover {
+      color: #C9A227;
+    }
 
-/* Lists */
-ul {
-  list-style: none;
-  padding: 0;
-}
+    h1 {
+      text-align: center;
+      font-size: 2.4rem;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      color: #0A1A2F;
+    }
 
-ul li {
-  margin-bottom: 15px;
-  font-size: 1.05rem;
-  line-height: 1.6;
-}
+    h2 {
+      text-align: center;
+      font-size: 1.3rem;
+      margin-bottom: 40px;
+      color: #3A3A3A;
+      font-weight: 400;
+    }
 
-/* Tables */
-table {
-  width: 90%;
-  border-collapse: collapse;
-}
-
-th, td {
-  padding: 15px;
-  border-bottom: 1px solid #E0E0E0;
-}
-
-th {
-  background-color: #F0F3F7;
-  font-weight: 600;
-}
-
-/* Form iframe */
-iframe {
-  width: 100%;
-  border: none;
-  border-radius: 10px;
-  height: 1200px;
-}
+    .content-box {
+      background-color: #FFFFFF;
+      border-radius: 12px;
+      padding: 30px;
+      margin: 20px auto;
+      max-width: 900px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
   </style>
 </head>
 <body>
-  <header>
+
+  <!-- LOGO -->
+  <div class="logo-box">
     <img src="eyp.2.jpeg" alt="PEYPC Logo">
-  </header>
+  </div>
+
+  <!-- NAVIGATION -->
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -104,9 +89,14 @@ iframe {
     <a href="registration.html">Registration</a>
     <a href="contact.html">Contact</a>
   </nav>
-  <main>
-    <h1>Welcome to PEYPC</h1>
-    <p>The official European Youth Parliament simulation hosted in Pefki. Explore the sections above to learn more and register.</p>
-  </main>
+
+  <h1>PEYPC</h1>
+  <h2>Pefki European Youth Parliament Conference</h2>
+
+  <div class="content-box">
+    Welcome to the official website of the Pefki European Youth Parliament Conference (PEYPC).  
+    Here you will find all information regarding committees, rules, schedule, registration and contact details.
+  </div>
+
 </body>
 </html>
