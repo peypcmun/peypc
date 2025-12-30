@@ -5,63 +5,88 @@
   <title>Registration – PEYPC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-     body {
+    body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #001A4D;
-      color: white;
-      padding: 20px;
+      font-family: 'Inter', 'Segoe UI', sans-serif;
+      background-color: #F7F9FC;
+      color: #1A1A1A;
+      padding: 0;
     }
+
+    /* Navigation with logo */
     nav {
-      background-color: #FFCC00;
+      background-color: #0A1A2F;
+      padding: 10px 25px;
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-bottom: 30px;
+      align-items: center;
+      justify-content: space-between;
     }
-    nav a {
-      color: #001A4D;
+
+    .nav-left img {
+      height: 40px;
+      width: auto;
+      border-radius: 6px;
+    }
+
+    .nav-right {
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-right a {
+      color: #FFFFFF;
       text-decoration: none;
-      padding: 15px 20px;
-      font-weight: bold;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: 0.2s;
     }
-    nav a:hover {
-      background-color: #003399;
-      color: white;
+
+    .nav-right a:hover {
+      color: #C9A227;
     }
+
     h1 {
       text-align: center;
-      font-size: 2.2rem;
-      margin-bottom: 20px;
+      font-size: 2rem;
+      margin-top: 40px;
+      margin-bottom: 25px;
+      color: #0A1A2F;
     }
-    .contact-box {
-      max-width: 800px;
-      margin: 0 auto;
-      background-color: #003399;
+
+    .form-container {
+      background-color: #FFFFFF;
+      border-radius: 12px;
       padding: 20px;
+      margin: 20px auto;
+      max-width: 900px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    iframe {
+      width: 100%;
+      border: none;
       border-radius: 10px;
-      font-size: 1.15rem;
-      line-height: 1.7;
+      height: 1200px;
     }
-    .contact-box p {
-      margin: 10px 0;
-    }
-    .label {
-      font-weight: bold;
-      color: #FFCC00;
-    }
-    </style>
+  </style>
 </head>
 <body>
 
+  <!-- NAVIGATION WITH LOGO -->
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="parties.html">Parties</a>
-    <a href="schedule.html">Schedule</a>
-    <a href="rules.html">Rules</a>
-    <a href="registration.html">Registration</a>
-    <a href="contact.html">Contact</a>
+    <div class="nav-left">
+      <img src="eyp.2.jpeg" alt="PEYPC Logo">
+    </div>
+
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="parties.html">Parties</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="rules.html">Rules</a>
+      <a href="registration.html">Registration</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </nav>
 
   <h1>Registration Form</h1>
