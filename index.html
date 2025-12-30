@@ -6,49 +6,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #001A4D;
-      color: white;
-    }
-    header {
-      background-color: #003399;
-      padding: 20px;
-      text-align: center;
-    }
-    header img {
-      max-width: 120px;
-    }
-    nav {
-      background-color: #FFCC00;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    nav a {
-      color: #001A4D;
-      text-decoration: none;
-      padding: 15px 20px;
-      font-weight: bold;
-    }
-    nav a:hover {
-      background-color: #003399;
-      color: white;
-    }
-    main {
-      padding: 40px 20px;
-      text-align: center;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto;
-      opacity: 0.9;
-    }
+  body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background-color: #F7F9FC;
+  color: #1A1A1A;
+  padding: 0;
+}
+
+/* Navigation */
+nav {
+  background-color: #0A1A2F;
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  color: #C9A227;
+}
+
+/* Page Title */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  color: #0A1A2F;
+}
+
+/* Content Boxes */
+.content-box, .contact-box, ul li, table {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Tables */
+table {
+  width: 90%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+th {
+  background-color: #F0F3F7;
+  font-weight: 600;
+}
+
+/* Form iframe */
+iframe {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  height: 1200px;
+}
   </style>
 </head>
 <body>
