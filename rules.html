@@ -1,126 +1,110 @@
 <!DOCTYPE html>
-<html lang="el">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Κανονισμοί – PEYPC</title>
+  <title>Rules – PEYPC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
- body {
-  margin: 0;
-  font-family: 'Inter', 'Segoe UI', sans-serif;
-  background-color: #F7F9FC;
-  color: #1A1A1A;
-  padding: 0;
-}
+    body {
+      margin: 0;
+      font-family: 'Inter', 'Segoe UI', sans-serif;
+      background-color: #F7F9FC;
+      color: #1A1A1A;
+      padding: 0;
+    }
 
-/* Navigation */
-nav {
-  background-color: #0A1A2F;
-  padding: 12px 0;
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-}
+    /* Navigation with logo */
+    nav {
+      background-color: #0A1A2F;
+      padding: 10px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-nav a {
-  color: #FFFFFF;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1rem;
-  transition: 0.2s;
-}
+    .nav-left img {
+      height: 40px;
+      width: auto;
+      border-radius: 6px;
+    }
 
-nav a:hover {
-  color: #C9A227;
-}
+    .nav-right {
+      display: flex;
+      gap: 25px;
+    }
 
-/* Page Title */
-h1 {
-  text-align: center;
-  font-size: 2rem;
-  margin-top: 40px;
-  margin-bottom: 25px;
-  color: #0A1A2F;
-}
+    .nav-right a {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: 0.2s;
+    }
 
-/* Content Boxes */
-.content-box, .contact-box, ul li, table {
-  background-color: #FFFFFF;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 900px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
+    .nav-right a:hover {
+      color: #C9A227;
+    }
 
-/* Lists */
-ul {
-  list-style: none;
-  padding: 0;
-}
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 40px;
+      margin-bottom: 25px;
+      color: #0A1A2F;
+    }
 
-ul li {
-  margin-bottom: 15px;
-  font-size: 1.05rem;
-  line-height: 1.6;
-}
+    .content-box {
+      background-color: #FFFFFF;
+      border-radius: 12px;
+      padding: 30px;
+      margin: 20px auto;
+      max-width: 900px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
 
-/* Tables */
-table {
-  width: 90%;
-  border-collapse: collapse;
-}
+    ul {
+      padding-left: 20px;
+    }
 
-th, td {
-  padding: 15px;
-  border-bottom: 1px solid #E0E0E0;
-}
-
-th {
-  background-color: #F0F3F7;
-  font-weight: 600;
-}
-
-/* Form iframe */
-iframe {
-  width: 100%;
-  border: none;
-  border-radius: 10px;
-  height: 1200px;
-}
+    ul li {
+      margin-bottom: 12px;
+    }
   </style>
 </head>
 <body>
 
+  <!-- NAVIGATION WITH LOGO -->
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="parties.html">Parties</a>
-    <a href="schedule.html">Schedule</a>
-    <a href="rules.html">Rules</a>
-    <a href="registration.html">Registration</a>
-    <a href="contact.html">Contact</a>
+    <div class="nav-left">
+      <img src="eyp.2.jpeg" alt="PEYPC Logo">
+    </div>
+
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="parties.html">Parties</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="rules.html">Rules</a>
+      <a href="registration.html">Registration</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </nav>
 
-  <h1>Κανονισμοί Συνεδρίου</h1>
+  <h1>Conference Rules</h1>
 
-  <ul>
-    <li>Ο διάλογος διεξάγεται με σεβασμό, ευγένεια και θεσμικό ύφος, ανεξαρτήτως πολιτικών ή προσωπικών απόψεων.</li>
-
-    <li>Οι συμμετέχοντες οφείλουν να προσέρχονται με επίσημο ενδυματολογικό κώδικα (formal dress code), κατάλληλο για θεσμική διαδικασία και σεβαστό προς το περιβάλλον του συνεδρίου.</li>
-
-    <li>Απαγορεύονται σχόλια ή τοποθετήσεις που προσβάλλουν, υποτιμούν ή στοχοποιούν άτομα ή ομάδες.</li>
-
-    <li>Οι συμμετέχοντες οφείλουν να ακολουθούν τη διαδικασία του Ευρωπαϊκού Κοινοβουλίου, όπως έχει προσαρμοστεί για το συνέδριο.</li>
-
-    <li>Η χρήση επιχειρημάτων πρέπει να βασίζεται σε λογική, τεκμηρίωση και σεβασμό προς τον συνομιλητή.</li>
-
-    <li>Οι πρόεδροι των επιτροπών έχουν την ευθύνη για την ομαλή διεξαγωγή των συζητήσεων και τη διατήρηση της τάξης.</li>
-
-    <li>Η συμμετοχή είναι ανοιχτή σε όλους τους μαθητές, ανεξαρτήτως φύλου, καταγωγής, θρησκείας ή πολιτικής τοποθέτησης.</li>
-
-    <li>Οποιαδήποτε παραβίαση των κανόνων μπορεί να οδηγήσει σε προειδοποίηση ή απομάκρυνση από τη διαδικασία, με απόφαση της οργανωτικής ομάδας.</li>
-  </ul>
+  <div class="content-box">
+    <ul>
+      <li>Participants must remain respectful and cooperative at all times.</li>
+      <li>Phones should remain silent during committee and GA sessions.</li>
+      <li>Delegates must follow the instructions of the chairs and organizers.</li>
+      <li>Formal or semi-formal attire is required during all official sessions.</li>
+      <li>Debate must follow parliamentary procedure and speaking order.</li>
+      <li>Any disruptive behavior may result in removal from the session.</li>
+      <li>Delegates are expected to participate actively and constructively.</li>
+    </ul>
+  </div>
 
 </body>
 </html>
