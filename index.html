@@ -56,7 +56,7 @@
       color: #C9A227;
     }
 
-    /* HAMBURGER ICON (hidden on desktop) */
+    /* HAMBURGER ICON */
     .mobile-menu-icon {
       display: none;
       position: absolute;
@@ -65,9 +65,12 @@
       font-size: 2rem;
       color: white;
       cursor: pointer;
+      background-color: #0A1A2F;
+      padding: 5px 10px;
+      border-radius: 6px;
     }
 
-    /* MOBILE MENU (hidden by default) */
+    /* MOBILE MENU */
     .mobile-menu {
       display: none;
       flex-direction: column;
@@ -84,16 +87,16 @@
 
     /* RESPONSIVE */
     @media (max-width: 600px) {
-      nav {
-        justify-content: center;
-      }
-
       nav a {
         display: none; /* hide desktop links */
       }
 
       .mobile-menu-icon {
         display: block; /* show hamburger */
+      }
+
+      nav {
+        padding-bottom: 40px; /* space so hamburger is visible */
       }
     }
 
