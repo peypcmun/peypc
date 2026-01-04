@@ -34,26 +34,30 @@
       height: auto;
     }
 
-    /* NAVIGATION (desktop stays centered) */
+    /* NAVIGATION */
     nav {
       background-color: #0A1A2F;
-      padding: 12px 0;
+      padding: 12px 25px;
       display: flex;
       justify-content: center;
-      gap: 25px;
+      gap: 20px;
       position: relative;
+      flex-wrap: wrap;
     }
 
     nav a {
-      color: #FFFFFF;
+      color: white;
       text-decoration: none;
+      font-size: 1.1rem;
       font-weight: 500;
-      font-size: 1rem;
-      transition: 0.2s;
+      padding: 8px 12px;
+      background-color: #1A2E4F;
+      border-radius: 6px;
     }
 
     nav a:hover {
-      color: #C9A227;
+      background-color: #C9A227;
+      color: #0A1A2F;
     }
 
     /* HAMBURGER ICON */
@@ -61,7 +65,8 @@
       display: none;
       position: absolute;
       right: 20px;
-      top: 10px;
+      top: 50%;
+      transform: translateY(-50%);
       font-size: 2rem;
       color: white;
       cursor: pointer;
@@ -88,15 +93,11 @@
     /* RESPONSIVE */
     @media (max-width: 600px) {
       nav a {
-        display: none; /* hide desktop links */
+        display: none;
       }
 
       .mobile-menu-icon {
-        display: block; /* show hamburger */
-      }
-
-      nav {
-        padding-bottom: 40px; /* space so hamburger is visible */
+        display: block;
       }
     }
 
