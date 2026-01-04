@@ -2,25 +2,25 @@
 <html lang="en">
 <head>
   <meta name="description" content="PEYPC – Pefki European Youth Parliament Conference. A student-led simulation of the European Parliament hosted at the 1st General Lyceum of Pefki.">
-<meta name="keywords" content="PEYPC, European Youth Parliament, Pefki, EYP, conference, youth parliament, simulation, committees, debate">
-<meta name="author" content="PEYPC Organizing Team">
+  <meta name="keywords" content="PEYPC, European Youth Parliament, Pefki, EYP, conference, youth parliament, simulation, committees, debate">
+  <meta name="author" content="PEYPC Organizing Team">
 
-<!-- OpenGraph for Google & social media -->
-<meta property="og:title" content="PEYPC – Pefki European Youth Parliament Conference">
-<meta property="og:description" content="Official website of the Pefki European Youth Parliament Conference. Information about committees, rules, schedule, and registration.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="eyp.2.jpeg">
+  <!-- OpenGraph -->
+  <meta property="og:title" content="PEYPC – Pefki European Youth Parliament Conference">
+  <meta property="og:description" content="Official website of the Pefki European Youth Parliament Conference. Information about committees, rules, schedule, and registration.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="eyp.2.jpeg">
 
   <meta charset="UTF-8">
   <title>PEYPC – Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       margin: 0;
       font-family: 'Inter', 'Segoe UI', sans-serif;
       background-color: #F7F9FC;
       color: #1A1A1A;
-      padding: 0;
     }
 
     /* Logo container */
@@ -34,12 +34,14 @@
       height: auto;
     }
 
+    /* NAVIGATION (desktop stays centered) */
     nav {
       background-color: #0A1A2F;
       padding: 12px 0;
       display: flex;
       justify-content: center;
       gap: 25px;
+      position: relative;
     }
 
     nav a {
@@ -52,6 +54,47 @@
 
     nav a:hover {
       color: #C9A227;
+    }
+
+    /* HAMBURGER ICON (hidden on desktop) */
+    .mobile-menu-icon {
+      display: none;
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      font-size: 2rem;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* MOBILE MENU (hidden by default) */
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      background-color: #0A1A2F;
+      text-align: center;
+    }
+
+    .mobile-menu a {
+      padding: 12px 0;
+      color: white;
+      text-decoration: none;
+      border-top: 1px solid #ffffff22;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      nav {
+        justify-content: center;
+      }
+
+      nav a {
+        display: none; /* hide desktop links */
+      }
+
+      .mobile-menu-icon {
+        display: block; /* show hamburger */
+      }
     }
 
     h1 {
@@ -82,6 +125,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <!-- LOGO -->
@@ -99,7 +143,22 @@
     <a href="rules.html">Rules</a>
     <a href="registration.html">Registration</a>
     <a href="contact.html">Contact</a>
+
+    <!-- HAMBURGER -->
+    <div class="mobile-menu-icon" onclick="toggleMenu()">☰</div>
   </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="parties.html">Parties</a>
+    <a href="study-guides.html">Study Guides</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="rules.html">Rules</a>
+    <a href="registration.html">Registration</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
   <h1>PEYPC</h1>
   <h2>Pefki European Youth Parliament Conference</h2>
@@ -108,6 +167,13 @@
     Welcome to the official website of the Pefki European Youth Parliament Conference (PEYPC).  
     Here you will find all information regarding committees, rules, schedule, registration and contact details.
   </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+    }
+  </script>
 
 </body>
 </html>
