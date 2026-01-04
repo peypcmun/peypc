@@ -19,34 +19,78 @@
       color: #1A1A1A;
     }
 
-    .logo-box {
-      text-align: center;
-      padding: 25px 0 10px 0;
-    }
-
-    .logo-box img {
-      width: 160px;
-      height: auto;
-    }
-
+    /* NAV BAR */
     nav {
       background-color: #0A1A2F;
-      padding: 12px 0;
+      padding: 10px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Logo */
+    .nav-left img {
+      height: 40px;
+      width: auto;
+      border-radius: 6px;
+    }
+
+    /* Desktop Menu */
+    .desktop-menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .desktop-menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 500;
+      padding: 8px 12px;
+      background-color: #1A2E4F;
+      border-radius: 6px;
+    }
+
+    .desktop-menu a:hover {
+      background-color: #C9A227;
+      color: #0A1A2F;
+    }
+
+    /* Mobile Hamburger Icon */
+    .mobile-menu-icon {
+      display: none;
+      font-size: 2rem;
+      cursor: pointer;
+      color: white;
+    }
+
+    /* Mobile Dropdown Menu */
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      background-color: #0A1A2F;
       text-align: center;
     }
 
-    nav a {
+    .mobile-menu a {
+      padding: 12px 0;
       color: white;
       text-decoration: none;
-      margin: 0 18px;
-      font-size: 1.1rem;
-      font-weight: 500;
+      border-top: 1px solid #ffffff22;
     }
 
-    nav a:hover {
-      color: #C9A227;
+    /* Responsive Switch */
+    @media (max-width: 600px) {
+      .desktop-menu {
+        display: none;
+      }
+
+      .mobile-menu-icon {
+        display: block;
+      }
     }
 
+    /* Page Title */
     h1 {
       text-align: center;
       margin-top: 30px;
@@ -54,6 +98,7 @@
       color: #0A1A2F;
     }
 
+    /* Study Guide Box */
     .committee-box {
       background: white;
       width: 80%;
@@ -88,36 +133,56 @@
 
 <body>
 
-  <!-- Logo -->
-  <div class="logo-box">
+<!-- NAVIGATION WITH LOGO + HAMBURGER MENU -->
+<nav>
+  <div class="nav-left">
     <img src="eyp.2.jpeg" alt="PEYPC Logo">
   </div>
 
-  <!-- Navigation -->
-  <nav>
-   <div class="nav-right">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="parties.html">Parties</a>
-      <a href="study-guides.html">Study Guides</a>
-      <a href="schedule.html">Schedule</a>
-      <a href="rules.html">Rules</a>
-      <a href="registration.html">Registration</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </nav>
-
-  <h1>Study Guides</h1>
-
-  <!-- Committee 1 -->
-  <div class="committee-box">
-    <h2>Study guide</h2>
-    <p>Download the official study guide for the peypc mun.</p>
-    <p>Please read it carefully for further clarification .</p>
-    <a class="pdf-link" href="study guide.pdf" target="_blank">Download</a>
+  <!-- Desktop Menu -->
+  <div class="desktop-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="parties.html">Parties</a>
+    <a href="study-guides.html">Study Guides</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="rules.html">Rules</a>
+    <a href="registration.html">Registration</a>
+    <a href="contact.html">Contact</a>
   </div>
 
+  <!-- Mobile Hamburger Icon -->
+  <div class="mobile-menu-icon" onclick="toggleMenu()">☰</div>
+</nav>
 
+<!-- Mobile Dropdown Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="parties.html">Parties</a>
+  <a href="study-guides.html">Study Guides</a>
+  <a href="schedule.html">Schedule</a>
+  <a href="rules.html">Rules</a>
+  <a href="registration.html">Registration</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<h1>Study Guides</h1>
+
+<!-- Committee 1 -->
+<div class="committee-box">
+  <h2>Study Guide</h2>
+  <p>Download the official study guide for the PEYPC MUN.</p>
+  <p>Please read it carefully for further clarification.</p>
+  <a class="pdf-link" href="study guide.pdf" target="_blank">Download</a>
+</div>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("mobileMenu");
+  menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+}
+</script>
 
 </body>
 </html>
