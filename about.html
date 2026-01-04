@@ -2,89 +2,28 @@
 <html lang="en">
 <head>
   <meta name="description" content="PEYPC – Pefki European Youth Parliament Conference. A student-led simulation of the European Parliament hosted at the 1st General Lyceum of Pefki.">
-<meta name="keywords" content="PEYPC, European Youth Parliament, Pefki, EYP, conference, youth parliament, simulation, committees, debate">
-<meta name="author" content="PEYPC Organizing Team">
+  <meta name="keywords" content="PEYPC, European Youth Parliament, Pefki, EYP, conference, youth parliament, simulation, committees, debate">
+  <meta name="author" content="PEYPC Organizing Team">
 
-<!-- OpenGraph for Google & social media -->
-<meta property="og:title" content="PEYPC – Pefki European Youth Parliament Conference">
-<meta property="og:description" content="Official website of the Pefki European Youth Parliament Conference. Information about committees, rules, schedule, and registration.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="eyp.2.jpeg">
+  <!-- OpenGraph -->
+  <meta property="og:title" content="PEYPC – Pefki European Youth Parliament Conference">
+  <meta property="og:description" content="Official website of the Pefki European Youth Parliament Conference. Information about committees, rules, schedule, and registration.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="eyp.2.jpeg">
 
   <meta charset="UTF-8">
   <title>About – PEYPC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
-    /* Desktop menu */
-.desktop-menu {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  background-color: #0A1A2F;
-  padding: 12px 0;
-}
-
-.desktop-menu a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: 500;
-  padding: 8px 12px;
-  background-color: #1A2E4F;
-  border-radius: 6px;
-}
-
-.desktop-menu a:hover {
-  background-color: #C9A227;
-  color: #0A1A2F;
-}
-
-/* Mobile hamburger icon */
-.mobile-menu-icon {
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
-  color: white;
-  background-color: #0A1A2F;
-  text-align: center;
-  padding: 10px 0;
-}
-
-/* Mobile dropdown menu */
-.mobile-menu {
-  display: none;
-  flex-direction: column;
-  background-color: #0A1A2F;
-  text-align: center;
-}
-
-.mobile-menu a {
-  padding: 12px 0;
-  color: white;
-  text-decoration: none;
-  border-top: 1px solid #ffffff22;
-}
-
-/* Responsive switch */
-@media (max-width: 600px) {
-  .desktop-menu {
-    display: none;
-  }
-
-  .mobile-menu-icon {
-    display: block;
-  }
-}
-
     body {
       margin: 0;
       font-family: 'Inter', 'Segoe UI', sans-serif;
       background-color: #F7F9FC;
       color: #1A1A1A;
-      padding: 0;
     }
 
-    /* Navigation with logo */
+    /* NAVIGATION */
     nav {
       background-color: #0A1A2F;
       padding: 10px 25px;
@@ -99,12 +38,86 @@
       border-radius: 6px;
     }
 
+    /* Desktop menu */
+    .desktop-menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .desktop-menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 500;
+      padding: 8px 12px;
+      background-color: #1A2E4F;
+      border-radius: 6px;
+    }
+
+    .desktop-menu a:hover {
+      background-color: #C9A227;
+      color: #0A1A2F;
+    }
+
+    /* Mobile hamburger icon */
+    .mobile-menu-icon {
+      display: none;
+      font-size: 2rem;
+      cursor: pointer;
+      color: white;
+      background-color: #0A1A2F;
+      padding: 5px 10px;
+      border-radius: 6px;
+    }
+
+    /* Mobile dropdown menu */
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      background-color: #0A1A2F;
+      text-align: center;
+    }
+
+    .mobile-menu a {
+      padding: 12px 0;
+      color: white;
+      text-decoration: none;
+      border-top: 1px solid #ffffff22;
+    }
+
+    /* Responsive switch */
+    @media (max-width: 600px) {
+      .desktop-menu {
+        display: none;
+      }
+
+      .mobile-menu-icon {
+        display: block;
+      }
+    }
+
+    /* PAGE CONTENT */
     h1 {
       text-align: center;
       font-size: 2rem;
       margin-top: 40px;
       margin-bottom: 25px;
       color: #0A1A2F;
+    }
+
+    /* TOPIC BOX */
+    .topic-box {
+      background-color: #FFFFFF;
+      border-left: 6px solid #C9A227;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 0 auto 30px auto;
+      max-width: 850px;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #0A1A2F;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      text-align: center;
     }
 
     .content-box {
@@ -119,16 +132,15 @@
     }
   </style>
 </head>
+
 <body>
 
-  <!-- NAVIGATION WITH LOGO -->
- <!-- NAVIGATION WITH LOGO + HAMBURGER MENU -->
+<!-- NAVIGATION -->
 <nav>
   <div class="nav-left">
     <img src="eyp.2.jpeg" alt="PEYPC Logo">
   </div>
 
-  <!-- Desktop Menu -->
   <div class="desktop-menu">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -140,11 +152,9 @@
     <a href="contact.html">Contact</a>
   </div>
 
-  <!-- Mobile Hamburger Icon -->
   <div class="mobile-menu-icon" onclick="toggleMenu()">☰</div>
 </nav>
 
-<!-- Mobile Dropdown Menu -->
 <div class="mobile-menu" id="mobileMenu">
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
@@ -156,26 +166,29 @@
   <a href="contact.html">Contact</a>
 </div>
 
+<h1>About PEYPC</h1>
 
-  <h1>About PEYPC</h1>
-  <h3 style="font-size: 2rem; color: #0A1A2F; text-align: center; margin-top: 20px;">
-  TOPIC: Equalising the right to adoption for same‑sex couples across all EU member states:
+<!-- TOPIC BOX -->
+<div class="topic-box">
+  <strong>TOPIC:</strong><br>
+  Equalising the right to adoption for same‑sex couples across all EU member states:<br>
   A step towards full equality or an infringement on national sovereignty?
-</h3>
+</div>
 
+<!-- MAIN CONTENT -->
+<div class="content-box">
+  The Pefki European Youth Parliament Conference (PEYPC) is a student‑driven simulation of the European Parliament, hosted at the 1st General Lyceum of Pefki on <strong>13/3/2026.</strong>
+  <br><br>
+  Our goal is to provide students with the opportunity to:
+  <ul>
+    <li>Engage in structured debate</li>
+    <li>Develop critical thinking and diplomacy skills</li>
+    <li>Collaborate with peers on European policy issues</li>
+    <li>Experience the procedures of parliamentary committees</li>
+  </ul>
+  PEYPC is organized by students, for students — promoting leadership, teamwork, and civic awareness.
+</div>
 
-  <div class="content-box">
-    The Pefki European Youth Parliament Conference (PEYPC) is a student‑driven simulation of the European Parliament, hosted at the 1st General Lyceum of Pefki on <strong>13/3/2026.</strong>  
-    <br><br>
-    Our goal is to provide students with the opportunity to:
-    <ul>
-      <li>Engage in structured debate</li>
-      <li>Develop critical thinking and diplomacy skills</li>
-      <li>Collaborate with peers on European policy issues</li>
-      <li>Experience the procedures of parliamentary committees</li>
-    </ul>
-    PEYPC is organized by students, for students — promoting leadership, teamwork, and civic awareness.
-  </div>
 <script>
 function toggleMenu() {
   const menu = document.getElementById("mobileMenu");
@@ -185,4 +198,3 @@ function toggleMenu() {
 
 </body>
 </html>
-
