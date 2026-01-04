@@ -15,6 +15,67 @@
   <title>About – PEYPC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    /* Desktop menu */
+.desktop-menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #0A1A2F;
+  padding: 12px 0;
+}
+
+.desktop-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 8px 12px;
+  background-color: #1A2E4F;
+  border-radius: 6px;
+}
+
+.desktop-menu a:hover {
+  background-color: #C9A227;
+  color: #0A1A2F;
+}
+
+/* Mobile hamburger icon */
+.mobile-menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  background-color: #0A1A2F;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Mobile dropdown menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #0A1A2F;
+  text-align: center;
+}
+
+.mobile-menu a {
+  padding: 12px 0;
+  color: white;
+  text-decoration: none;
+  border-top: 1px solid #ffffff22;
+}
+
+/* Responsive switch */
+@media (max-width: 600px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+}
+
     body {
       margin: 0;
       font-family: 'Inter', 'Segoe UI', sans-serif;
@@ -36,23 +97,6 @@
       height: 40px;
       width: auto;
       border-radius: 6px;
-    }
-
-    .nav-right {
-      display: flex;
-      gap: 25px;
-    }
-
-    .nav-right a {
-      color: #FFFFFF;
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 1rem;
-      transition: 0.2s;
-    }
-
-    .nav-right a:hover {
-      color: #C9A227;
     }
 
     h1 {
@@ -78,22 +122,40 @@
 <body>
 
   <!-- NAVIGATION WITH LOGO -->
-  <nav>
-    <div class="nav-left">
-      <img src="eyp.2.jpeg" alt="PEYPC Logo">
-    </div>
+ <!-- NAVIGATION WITH LOGO + HAMBURGER MENU -->
+<nav>
+  <div class="nav-left">
+    <img src="eyp.2.jpeg" alt="PEYPC Logo">
+  </div>
 
-    <div class="nav-right">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="parties.html">Parties</a>
-      <a href="study-guides.html">Study Guides</a>
-      <a href="schedule.html">Schedule</a>
-      <a href="rules.html">Rules</a>
-      <a href="registration.html">Registration</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </nav>
+  <!-- Desktop Menu -->
+  <div class="desktop-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="parties.html">Parties</a>
+    <a href="study-guides.html">Study Guides</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="rules.html">Rules</a>
+    <a href="registration.html">Registration</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Mobile Hamburger Icon -->
+  <div class="mobile-menu-icon" onclick="toggleMenu()">☰</div>
+</nav>
+
+<!-- Mobile Dropdown Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="parties.html">Parties</a>
+  <a href="study-guides.html">Study Guides</a>
+  <a href="schedule.html">Schedule</a>
+  <a href="rules.html">Rules</a>
+  <a href="registration.html">Registration</a>
+  <a href="contact.html">Contact</a>
+</div>
+
 
   <h1>About PEYPC</h1>
   <h3 style="font-size: 2rem; color: #0A1A2F; text-align: center; margin-top: 20px;">
@@ -114,6 +176,12 @@
     </ul>
     PEYPC is organized by students, for students — promoting leadership, teamwork, and civic awareness.
   </div>
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("mobileMenu");
+  menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+}
+</script>
 
 </body>
 </html>
