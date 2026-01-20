@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PEPSC - Consent Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <meta name="description" content="Consent Forms for the Pefki European Youth Parliament Conference (PEPSC). Download participation and photography consent documents.">
+  <meta name="keywords" content="PEPSC, Consent Form, Participation, Photography, Documents">
+  <meta name="author" content="PEPSC Organizing Team">
+
+  <!-- Style -->
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', 'Segoe UI', sans-serif;
+      background-color: #F7F9FC;
+      color: #1A1A1A;
+    }
+
+    /* NAV BAR */
+    nav {
+      background-color: #0A1A2F;
+      padding: 10px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Logo */
+    .nav-left img {
+      height: 40px;
+      width: auto;
+      border-radius: 6px;
+    }
+
+    /* Desktop Menu */
+    .desktop-menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .desktop-menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    .desktop-menu a:hover {
+      background-color: #C9A227;
+      color: #0A1A2F;
+    }
+
+    /* Mobile Hamburger Icon */
+    .mobile-menu-icon {
+      display: none;
+      font-size: 2rem;
+      cursor: pointer;
+      color: white;
+    }
+
+    /* Mobile Dropdown Menu */
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      background-color: #0A1A2F;
+      text-align: center;
+    }
+
+    .mobile-menu a {
+      padding: 12px 0;
+      color: white;
+      text-decoration: none;
+      border-top: 1px solid #ffffff22;
+    }
+
+    /* Responsive Switch */
+    @media (max-width: 600px) {
+      .desktop-menu {
+        display: none;
+      }
+
+      .mobile-menu-icon {
+        display: block;
+      }
+    }
+
+    /* Page Title */
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 2.2rem;
+      color: #0A1A2F;
+    }
+
+    /* Consent Form Container */
+    .consent-container {
+      background: white;
+      width: 80%;
+      margin: 25px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin: 15px;
+      padding: 12px 20px;
+      background-color: #0A1A2F;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .download-btn:hover {
+      background-color: #C9A227;
+      color: #0A1A2F;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION WITH LOGO + HAMBURGER MENU -->
+<nav>
+  <div class="nav-left">
+    <img src="peps.png" alt="PEPSC Logo">
+  </div>
+
+  <!-- Desktop Menu -->
+  <div class="desktop-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="parties.html">Parties</a>
+    <a href="study-guides.html">Study Guides</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="rules.html">Rules</a>
+    <a href="consent-form.html">Consent Form</a>
+    <a href="registration.html">Registration</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Mobile Hamburger Icon -->
+  <div class="mobile-menu-icon" onclick="toggleMenu()">☰</div>
+</nav>
+
+<!-- Mobile Dropdown Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="parties.html">Parties</a>
+  <a href="study-guides.html">Study Guides</a>
+  <a href="schedule.html">Schedule</a>
+  <a href="rules.html">Rules</a>
+  <a href="consent-form.html">Consent Form</a>
+  <a href="registration.html">Registration</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<h1>Consent Forms</h1>
+
+<div class="consent-container">
+  <p>Please download and submit the required consent forms for participation in PEPSC 2026.</p>
+
+  <a class="download-btn" href="files/consent-participation.pdf" download>
+    Participation Consent Form
+  </a>
+
+  <a class="download-btn" href="files/consent-photo.pdf" download>
+    Photography Consent Form
+  </a>
+</div>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("mobileMenu");
+  menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+}
+</script>
+
+</body>
+</html>
